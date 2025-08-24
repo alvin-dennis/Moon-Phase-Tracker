@@ -67,7 +67,6 @@ function App() {
           ) : (
             <Forecast forecast={forecast} formatDate={formatDate} />
           ))}
-        <About />
       </div>
     </div>
   );
