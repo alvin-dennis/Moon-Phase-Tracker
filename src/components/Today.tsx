@@ -37,10 +37,10 @@ export function Today({
       try {
         const data = await fetchMoonPhases(lat, lng, apiKey);
         const phases = extractMoonPhasesOnly(data);
-  setTodayPhase(phases[0] || null);
+        setTodayPhase(phases[0] || null);
       } catch (err) {
         setError("Failed to load moon phase");
-  console.error("Moon phase API error:", err);
+        console.error("Moon phase API error:", err);
       } finally {
         setLoading(false);
       }
